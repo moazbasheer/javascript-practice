@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+    <script>
+      // changing the color of the element with id "el" to red
+      // this will not work as the element is not seen by the code
+      document.getElementById("el").style.color = "red";
+    </script>
+    <script>
+      // after loading the window, changing the color of the element with id "el" to red
+      // this will work
+      window.onload = function () {
+        document.getElementById("el").style.color = "red";
+      };
+    </script>
+  </head>
+  <body>
+    <h1 id="el">Page Title</h1>
+    <script>
+      // after loading the window, changing the color of the element with id "el" to red
+      // this will work
+      document.getElementById("el").style.color = "red";
+    </script>
+  </body>
+</html>
